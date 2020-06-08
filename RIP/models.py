@@ -12,11 +12,11 @@ class Cinephile:
     def all(self):
         return self.filmy
 
-    # def get (self, id):
-    #     give_film = [film for film in self.all() if film['id' == id]
-    #     if give_film:
-    #         return give_film[0]
-    #     return []
+    def get (self, id):
+        give_film = [film for film in self.all() if film['id'] == id]
+        if give_film:
+            return give_film[0]
+        return []
 
     def create(self, data):
         self.filmy.append(data)
